@@ -27,13 +27,13 @@
     <nav id="navbar">
       <div class="navbar__logo">
         <i class="favicon">
-          <img src="imgs/favicon.png" width="40" height="40" alt="Logo" />
+          <img src="imgs/favicon.png" width="25" height="25" alt="Logo" />
         </i>
         <a href="#">Hailey</a>
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item active">Home</li>
           <li class="navbar__menu__item">About</li>
           <li class="navbar__menu__item">Skills</li>
           <li class="navbar__menu__item">My Work</li>
@@ -57,70 +57,85 @@
     </section>
     
     <!-- About -->
-    <section id="about"></section>
-    <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Qui neque inventore possimus autem praesentium sed eveniet animi rem atque,
-       perspiciatis totam veritatis laboriosam optio illo error quas officia non deleniti.</p>
+    <section id="about" class="section">
+      <h1>About me</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Qui neque inventore possimus autem praesentium sed eveniet animi rem atque,
+         perspiciatis totam veritatis laboriosam optio illo error quas officia non deleniti.
+      </p>
 
-       <div claa="about__majors">
-         <div class="majors">
-           <div class="major__icon">
-            <i class="fab fa-html5"></i>
-           </div>
-           <div class="major__title">Front-end</div>
-           <div class="major__description">
-             HTML, CSS, JavaScript, TYpeScript,
-             <br/>React, Vue, Web APIs
-           </div>
-         </div>
-       </div>
-       <div claa="about__majors">
-        <div class="majors">
+      <div class="about__majors">
+        <div class="major">
           <div class="major__icon">
-           <i class="fab fa-html5"></i>
+            <i class="fab fa-html5"></i>
           </div>
-          <div class="major__title">Front-end</div>
+          <h2 class="major__title">Front-end</h2>
           <div class="major__description">
             HTML, CSS, JavaScript, TYpeScript,
             <br/>React, Vue, Web APIs
           </div>
         </div>
-      </div>
-      <div claa="about__majors">
-        <div class="majors">
-          <div class="major__icon">
-           <i class="fab fa-html5"></i>
+        <div claa="about__major">
+          <div class="majors">
+            <div class="major__icon">
+            <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">
+              HTML, CSS, JavaScript, TYpeScript,
+              <br/>React, Vue, Web APIs
+            </div>
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">
-            HTML, CSS, JavaScript, TYpeScript,
-            <br/>React, Vue, Web APIs
+        </div>
+        <div claa="about__major">
+          <div class="majors">
+            <div class="major__icon">
+            <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">
+              HTML, CSS, JavaScript, TYpeScript,
+              <br/>React, Vue, Web APIs
+            </div>
           </div>
         </div>
       </div>
       <div class="about__school">
         <div class="school">
-          <img src="imgs/schools/Seneca-College-logo.png"
-               alt="Seneca College" 
-               class="school__logo">
-          <p class="school__name">Computer Progamming Diploma</p>
-          <p class="school__period">2017 June ~ 2014 Sept</p>
-          <div class="p school__country">Toronto, Canada</div>
-        </div>
+          <img
+            src="imgs/schools/seneca.png"
+            alt="Seneca College" 
+            class="school__logo"
+          />
+          <div class="school__description">
+            <p class="school__name">
+              Computer Progamming Diploma
+            </p>
+            <p class="school__country">Toronto, Canada</p>
+            <p class="school__period">2014 Sept ~ 2017 June</p>
+            
+          </div>
+        </div> 
         <div class="school">
-          <img src="imgs/schools/soongeui.png"
-               alt="Soongeui Women's College" 
-               class="school__logo">
-          <p class="school__name">Digital Media Design Diploma</p>
-          <p class="school__period">2012 March ~ 2013 DEC</p>
-          <div class="p school__country">Seoul, South Korea</div>
-        </div>
-
+          <img
+            src="imgs/schools/soongeui.png"
+            alt="Soongeui Women's College" 
+            class="school__logo"
+          />
+          <div class="school__description">
+            <p class="school__name">
+              Digital Media Design Diploma
+            </p>
+            <p class="school__country">Seoul, South Korea</p>
+            <p class="school__period">2012 March ~ 2013 DEC</p>
+            
+          </div>
         </div>
       </div>
+    </section>
+
     <!-- Skills -->
-    <section id="skiis">
+    <section id="skiis" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -185,7 +200,7 @@
     </section>
 
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
@@ -223,7 +238,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
       <div class="testimonials">
@@ -264,7 +279,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__tile">Let's talk</h1>
       <h2 class="contact__email">haileykang@gmail.com</h2>
       <div class="contact__links">
@@ -277,5 +292,6 @@
       </div>
       <p class="contact__rights">2020 Hailey Hyelin Kang All rights reserved</p>
     </section>
+
   </body>
 </html>
